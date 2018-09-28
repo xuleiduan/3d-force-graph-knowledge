@@ -1,8 +1,8 @@
 <head>
   <style> body { margin: 0; } </style>
 
-    <script src="../3d-force-graph.js"></script>
-<script src="../3d-force-graph.min.js"></script>
+    <script src="./3d-force-graph.js"></script>
+<script src="./3d-force-graph.min.js"></script>
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 
     const Graph = ForceGraph3D()
       (elem)
-        .jsonUrl('../miserables.json')
+        .jsonUrl('./miserables.json')
         .nodeLabel('id')
         .nodeAutoColorBy('group')
         .onNodeHover(node => elem.style.cursor = node ? 'pointer' : null)
